@@ -1,0 +1,16 @@
+{
+  "name": "from-the-other-side",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "A platform for sharing ghostly encounters",
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
