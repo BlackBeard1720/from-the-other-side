@@ -16,8 +16,8 @@ const server = http.createServer(async (req, res) => {
         if (req.method === 'GET') {
             return await handleGet(res, __dirname);
         } else if (req.method === 'POST') {
-            // Chuyển tiếp cho handlePost xử lý dữ liệu gửi lên
-            handlePost(req, res);
+            // Truyền res và __dirname để handlePost có thể lưu file JSON
+            handlePost(req, res, __dirname);
         }
     } else if (!req.url.startsWith('/api')) {
         // Trả về file giao diện (HTML/CSS) cho các đường dẫn còn lại
